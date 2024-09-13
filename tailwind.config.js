@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         custom: ['gsfont', 'sans-serif'],
+        trebuc: ['trebuchetMs', 'sans-serif'],
       },
       colors: {
         gold: '#FFD700',

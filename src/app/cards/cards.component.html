@@ -4,8 +4,9 @@
         class="w-64 sm:w-64 h-64 rounded-full bg-cover bg-center flex items-center justify-center cursor-pointer"
         [ngStyle]="{'background-image': 'url(assets/coin.png)'}" (click)="openModal(player)">
         <div class="text-center">
-            <h3 class="text-black font-bold">{{ player.nome }}</h3>
-            <p class="text-black mt-24">{{ player.apelido }}</p>
+            <h3 class="text-black font-bold mt-32 font-custom">{{ player.nome
+                }}</h3>
+            <p class="text-black mt-24 font-custom">{{ player.apelido }}</p>
         </div>
     </div>
 </div>
@@ -24,11 +25,12 @@
         <!-- Imagem e Conteúdo do Modal -->
         <div class="flex flex-col items-center">
             <img [src]="selectedPlayer.image" alt="Imagem do Player"
-                class="w-32 h-32 sm:w-40 sm:h-40 lg:w-56 lg:h-56 rounded-full mb-4">
+                class="w-32 h-32 sm:w-40 sm:h-40 lg:w-56 lg:h-56 rounded-full mb-4 object-cover object-top">
             <div class="bg-black bg-center bg-opacity-60 rounded-lg text-center p-4 max-h-48 overflow-y-auto">
-                <h3 class="text-white text-2xl font-bold">{{ selectedPlayer.nome }}</h3>
-                <p class="text-white text-lg">{{ selectedPlayer.apelido }}</p>
-                <p class="text-white mt-4">{{selectedPlayer.texto}}</p>
+                <h3 class="text-white text-2xl font-custom mt-20">{{
+                    selectedPlayer.nome }}</h3>
+                <p class="text-white text-lg font-custom">{{ selectedPlayer.apelido }}</p>
+                <p class="text-white -mt-12 font-trebuc">{{selectedPlayer.texto}}</p>
             </div>
         </div>
     </div>
