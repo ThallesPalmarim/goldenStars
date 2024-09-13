@@ -1,0 +1,13 @@
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'gsfont';
+    src: url('assets/fonts/gsfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
